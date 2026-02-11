@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Qunhao's AI Transformation Journey | 12-Week Roadmap</title>
+    <title data-i18n="site.title">Qunhao AI Professional Transformation</title>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="styles.css">
@@ -16,395 +16,284 @@
                 <div class="flex items-center">
                     <span class="font-['Space_Grotesk'] text-2xl font-bold text-[#f59e0b]">Qunhao.AI</span>
                 </div>
-                <div class="hidden md:flex space-x-8">
-                    <a href="#goals" class="text-gray-300 hover:text-[#06b6d4] transition-colors">目标</a>
-                    <a href="#roadmap" class="text-gray-300 hover:text-[#06b6d4] transition-colors">路线图</a>
-                    <a href="#progress" class="text-gray-300 hover:text-[#06b6d4] transition-colors">进度</a>
-                    <a href="#milestones" class="text-gray-300 hover:text-[#06b6d4] transition-colors">里程碑</a>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#positioning" class="text-gray-300 hover:text-[#06b6d4] transition-colors" data-i18n="nav.positioning">Positioning</a>
+                    <a href="#goals" class="text-gray-300 hover:text-[#06b6d4] transition-colors" data-i18n="nav.goals">Goals</a>
+                    <a href="#roadmap" class="text-gray-300 hover:text-[#06b6d4] transition-colors" data-i18n="nav.roadmap">Roadmap</a>
+                    <a href="#dashboard" class="text-gray-300 hover:text-[#06b6d4] transition-colors" data-i18n="nav.dashboard">Dashboard</a>
+                    <a href="#milestones" class="text-gray-300 hover:text-[#06b6d4] transition-colors" data-i18n="nav.milestones">Milestones</a>
+                </div>
+                <!-- Language Toggle -->
+                <div class="flex items-center">
+                    <button id="lang-toggle" class="brutalist-btn bg-[#334155] text-white px-4 py-2 text-sm font-bold">
+                        <span id="lang-text">EN | 中文</span>
+                    </button>
                 </div>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="pt-32 pb-20 px-4 sm:px-6 lg:px-8">
+    <!-- Hero Section with Three Core Positioning -->
+    <section id="positioning" class="pt-32 pb-20 px-4 sm:px-6 lg:px-8">
         <div class="max-w-7xl mx-auto">
-            <div class="brutalist-card bg-[#334155] p-8 md:p-12 transform rotate-[-0.5deg]">
-                <div class="flex flex-col md:flex-row items-center gap-8">
-                    <div class="flex-1">
-                        <div class="inline-block bg-[#f59e0b] text-black px-4 py-2 font-bold mb-4 brutalist-border">
-                            12周AI转型计划
-                        </div>
-                        <h1 class="font-['Space_Grotesk'] text-4xl md:text-6xl font-bold mb-6 leading-tight">
-                            从资产完整性专家<br>
-                            <span class="text-[#f59e0b]">到AI赋能领导者</span>
-                        </h1>
-                        <p class="text-xl text-gray-300 mb-8 max-w-2xl">
-                            25年能源行业经验 × AI技术 = 未来的资产管理战略家
-                        </p>
-                        <div class="flex flex-wrap gap-4">
-                            <a href="#roadmap" class="brutalist-btn bg-[#f59e0b] text-black px-8 py-4 font-bold text-lg inline-block hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all">
-                                查看路线图 →
-                            </a>
-                            <a href="#progress" class="brutalist-btn bg-[#06b6d4] text-black px-8 py-4 font-bold text-lg inline-block hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all">
-                                追踪进度
-                            </a>
-                        </div>
+            <!-- Main Hero -->
+            <div class="text-center mb-16">
+                <h1 class="font-['Space_Grotesk'] text-4xl md:text-6xl font-bold mb-6">
+                    <span class="text-white" data-i18n="hero.name">Qunhao Lin</span>
+                    <span class="block text-[#f59e0b] mt-2" data-i18n="hero.subtitle">AI-Enabled Energy Industries Leader</span>
+                </h1>
+                <p class="text-xl text-gray-400 max-w-3xl mx-auto" data-i18n="hero.description">
+                    25 years of Asset Integrity experience × AI Technology = Future of Energy Operations
+                </p>
+            </div>
+
+            <!-- Three Core Positioning -->
+            <div class="grid md:grid-cols-3 gap-6 mb-12">
+                <!-- Position 1 -->
+                <div class="brutalist-card bg-[#334155] p-8 transform hover:rotate-[0.5deg] transition-all group cursor-pointer relative overflow-hidden">
+                    <div class="absolute inset-0 bg-gradient-to-br from-[#f59e0b]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    <div class="text-5xl mb-4">⚡</div>
+                    <h3 class="font-['Space_Grotesk'] text-xl font-bold mb-3 text-[#f59e0b]" data-i18n="positioning.1.title">
+                        AI-Enabled Senior Energy Operations Leader
+                    </h3>
+                    <p class="text-gray-300 text-sm" data-i18n="positioning.1.desc">
+                        Leveraging AI to optimize energy operations and drive operational excellence
+                    </p>
+                </div>
+
+                <!-- Position 2 -->
+                <div class="brutalist-card bg-[#334155] p-8 transform hover:rotate-[-0.5deg] transition-all group cursor-pointer relative overflow-hidden">
+                    <div class="absolute inset-0 bg-gradient-to-br from-[#06b6d4]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    <div class="text-5xl mb-4">🎯</div>
+                    <h3 class="font-['Space_Grotesk'] text-xl font-bold mb-3 text-[#06b6d4]" data-i18n="positioning.2.title">
+                        AI-Driven Asset Integrity Strategist
+                    </h3>
+                    <p class="text-gray-300 text-sm" data-i18n="positioning.2.desc">
+                        Transforming asset management through predictive AI and data-driven strategies
+                    </p>
+                </div>
+
+                <!-- Position 3 -->
+                <div class="brutalist-card bg-[#334155] p-8 transform hover:rotate-[0.5deg] transition-all group cursor-pointer relative overflow-hidden">
+                    <div class="absolute inset-0 bg-gradient-to-br from-[#f59e0b]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    <div class="text-5xl mb-4">🌉</div>
+                    <h3 class="font-['Space_Grotesk'] text-xl font-bold mb-3 text-[#f59e0b]" data-i18n="positioning.3.title">
+                        Bridge Builder: Industry & Future Tech
+                    </h3>
+                    <p class="text-gray-300 text-sm" data-i18n="positioning.3.desc">
+                        Connecting 25 years of industrial expertise with cutting-edge AI innovation
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Six Clear Goals -->
+    <section id="goals" class="py-20 px-4 sm:px-6 lg:px-8 bg-[#0f172a]">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="font-['Space_Grotesk'] text-4xl font-bold mb-4 text-center">
+                <span class="bg-[#06b6d4] text-black px-4 py-2 brutalist-border inline-block transform rotate-[-1deg]" data-i18n="goals.title">
+                    Six Clear Goals
+                </span>
+            </h2>
+            <p class="text-center text-gray-400 mb-12" data-i18n="goals.subtitle">Daily reminders of your transformation journey</p>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="brutalist-card bg-[#334155] p-6 flex items-start gap-4">
+                    <div class="w-12 h-12 bg-[#f59e0b] brutalist-border flex items-center justify-center text-black font-bold text-xl shrink-0">1</div>
+                    <div>
+                        <h3 class="font-bold text-[#f59e0b] mb-1" data-i18n="goals.1.title">Master AI Fundamentals</h3>
+                        <p class="text-sm text-gray-300" data-i18n="goals.1.desc">Understand ML/DL core concepts and build AI technical thinking</p>
                     </div>
-                    <div class="flex-1 flex justify-center">
-                        <div class="relative">
-                            <div class="w-64 h-64 md:w-80 md:h-80 bg-[#f59e0b] brutalist-border flex items-center justify-center transform rotate-[3deg]">
-                                <div class="text-center">
-                                    <div class="text-6xl mb-2">🚀</div>
-                                    <div class="font-['Space_Grotesk'] text-4xl font-bold text-black">WEEK</div>
-                                    <div class="font-['Space_Grotesk'] text-6xl font-bold text-black" id="current-week">1</div>
-                                    <div class="text-black font-bold">of 12</div>
+                </div>
+                <div class="brutalist-card bg-[#334155] p-6 flex items-start gap-4">
+                    <div class="w-12 h-12 bg-[#06b6d4] brutalist-border flex items-center justify-center text-black font-bold text-xl shrink-0">2</div>
+                    <div>
+                        <h3 class="font-bold text-[#06b6d4] mb-1" data-i18n="goals.2.title">Data Processing Skills</h3>
+                        <p class="text-sm text-gray-300" data-i18n="goals.2.desc">Proficient Python data analysis and visualization</p>
+                    </div>
+                </div>
+                <div class="brutalist-card bg-[#334155] p-6 flex items-start gap-4">
+                    <div class="w-12 h-12 bg-[#f59e0b] brutalist-border flex items-center justify-center text-black font-bold text-xl shrink-0">3</div>
+                    <div>
+                        <h3 class="font-bold text-[#f59e0b] mb-1" data-i18n="goals.3.title">Industry AI Applications</h3>
+                        <p class="text-sm text-gray-300" data-i18n="goals.3.desc">Apply AI to Asset Integrity and solve real business problems</p>
+                    </div>
+                </div>
+                <div class="brutalist-card bg-[#334155] p-6 flex items-start gap-4">
+                    <div class="w-12 h-12 bg-[#06b6d4] brutalist-border flex items-center justify-center text-black font-bold text-xl shrink-0">4</div>
+                    <div>
+                        <h3 class="font-bold text-[#06b6d4] mb-1" data-i18n="goals.4.title">LLM Tools Mastery</h3>
+                        <p class="text-sm text-gray-300" data-i18n="goals.4.desc">Master LLM tool integration for enhanced decision-making</p>
+                    </div>
+                </div>
+                <div class="brutalist-card bg-[#334155] p-6 flex items-start gap-4">
+                    <div class="w-12 h-12 bg-[#f59e0b] brutalist-border flex items-center justify-center text-black font-bold text-xl shrink-0">5</div>
+                    <div>
+                        <h3 class="font-bold text-[#f59e0b] mb-1" data-i18n="goals.5.title">Project Portfolio</h3>
+                        <p class="text-sm text-gray-300" data-i18n="goals.5.desc">Complete 3-5 showcase AI projects and build personal brand</p>
+                    </div>
+                </div>
+                <div class="brutalist-card bg-[#334155] p-6 flex items-start gap-4">
+                    <div class="w-12 h-12 bg-[#06b6d4] brutalist-border flex items-center justify-center text-black font-bold text-xl shrink-0">6</div>
+                    <div>
+                        <h3 class="font-bold text-[#06b6d4] mb-1" data-i18n="goals.6.title">Professional Network</h3>
+                        <p class="text-sm text-gray-300" data-i18n="goals.6.desc">Build AI domain connections and gain industry recognition</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dashboard Section -->
+    <section id="dashboard" class="py-20 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="font-['Space_Grotesk'] text-4xl font-bold mb-4 text-center">
+                <span class="bg-[#f59e0b] text-black px-4 py-2 brutalist-border inline-block transform rotate-[1deg]" data-i18n="dashboard.title">
+                    Progress Dashboard
+                </span>
+            </h2>
+            <p class="text-center text-gray-400 mb-12" data-i18n="dashboard.subtitle">Track your transformation journey in real-time</p>
+            
+            <div class="brutalist-card bg-[#334155] p-8 max-w-4xl mx-auto">
+                <!-- Main Stats -->
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mb-8">
+                    <div class="text-center">
+                        <div class="text-4xl font-bold text-[#f59e0b] mb-2"><span id="overall-progress">8</span>%</div>
+                        <div class="text-sm text-gray-400" data-i18n="dashboard.overall">Overall Progress</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-4xl font-bold text-[#06b6d4] mb-2"><span id="weeks-completed">1</span>/12</div>
+                        <div class="text-sm text-gray-400" data-i18n="dashboard.weeks">Weeks Completed</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-4xl font-bold text-green-400 mb-2" id="current-sprint-display">1</div>
+                        <div class="text-sm text-gray-400" data-i18n="dashboard.sprint">Current Sprint</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-4xl font-bold text-purple-400 mb-2" id="cert-count">0</div>
+                        <div class="text-sm text-gray-400" data-i18n="dashboard.certs">Certificates</div>
+                    </div>
+                </div>
+                
+                <!-- Progress Bar -->
+                <div class="mb-8">
+                    <div class="flex justify-between mb-2">
+                        <span class="text-sm font-bold" data-i18n="dashboard.progressBar">Transformation Progress</span>
+                        <span class="text-sm text-[#f59e0b]" id="progress-text">Week 1 of 12</span>
+                    </div>
+                    <div class="w-full h-8 bg-[#1e293b] brutalist-border overflow-hidden">
+                        <div id="main-progress-bar" class="h-full bg-gradient-to-r from-[#f59e0b] to-[#06b6d4] transition-all duration-1000" style="width: 8%"></div>
+                    </div>
+                </div>
+
+                <!-- Edit Button -->
+                <div class="text-center">
+                    <button id="edit-progress-btn" class="brutalist-btn bg-[#334155] text-white px-6 py-3 font-bold" data-i18n="dashboard.updateBtn">
+                        Update Progress
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 12-Week Roadmap -->
+    <section id="roadmap" class="py-20 px-4 sm:px-6 lg:px-8 bg-[#0f172a]">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="font-['Space_Grotesk'] text-4xl font-bold mb-4 text-center">
+                <span class="bg-[#06b6d4] text-black px-4 py-2 brutalist-border inline-block transform rotate-[-1deg]" data-i18n="roadmap.title">
+                    12-Week AI Transformation Roadmap
+                </span>
+            </h2>
+            <p class="text-center text-gray-400 mb-12" data-i18n="roadmap.subtitle">Six core sprints, one milestone every two weeks</p>
+            
+            <div class="space-y-6" id="roadmap-container">
+                <!-- Sprint 1 -->
+                <div class="brutalist-card bg-[#334155] p-6 sprint-card" data-sprint="1">
+                    <div class="flex flex-col md:flex-row gap-6">
+                        <div class="md:w-1/4">
+                            <div class="inline-block bg-[#f59e0b] text-black px-3 py-1 font-bold text-sm mb-2 brutalist-border">Week 1-2</div>
+                            <h3 class="font-['Space_Grotesk'] text-xl font-bold text-[#f59e0b]" data-i18n="roadmap.sprint1.title">Sprint 1: AI Foundations</h3>
+                            <div class="mt-2">
+                                <span class="text-xs px-2 py-1 rounded status-badge" data-status="in-progress">In Progress</span>
+                            </div>
+                        </div>
+                        <div class="md:w-3/4">
+                            <p class="text-gray-300 mb-4" data-i18n="roadmap.sprint1.desc">Build fundamental understanding of AI/ML concepts and industry applications</p>
+                            <div class="space-y-2">
+                                <div class="resource-link">
+                                    <span class="text-[#f59e0b]">📘</span>
+                                    <a href="https://www.coursera.org/learn/ai-for-everyone" target="_blank" class="text-[#06b6d4] hover:underline ml-2">AI for Everyone (Coursera)</a>
+                                </div>
+                                <div class="resource-link">
+                                    <span class="text-[#f59e0b]">📺</span>
+                                    <a href="https://www.youtube.com/watch?v=ukzFI9rgwfU" target="_blank" class="text-[#06b6d4] hover:underline ml-2">Machine Learning Introduction</a>
+                                </div>
+                                <div class="resource-link">
+                                    <span class="text-[#f59e0b]">🔧</span>
+                                    <a href="#" target="_blank" class="text-[#06b6d4] hover:underline ml-2">Python Basics Practice</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Goals Section -->
-    <section id="goals" class="py-20 px-4 sm:px-6 lg:px-8 bg-[#0f172a]">
-        <div class="max-w-7xl mx-auto">
-            <h2 class="font-['Space_Grotesk'] text-4xl font-bold mb-4 text-center">
-                <span class="bg-[#06b6d4] text-black px-4 py-2 brutalist-border inline-block transform rotate-[-1deg]">
-                    六大清晰目标
-                </span>
-            </h2>
-            <p class="text-center text-gray-400 mb-12">每天看到，时刻提醒自己前进的方向</p>
-            
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- Goal 1 -->
-                <div class="brutalist-card bg-[#334155] p-6 transform hover:rotate-[0.5deg] transition-transform">
-                    <div class="w-12 h-12 bg-[#f59e0b] brutalist-border flex items-center justify-center text-black font-bold text-xl mb-4">1</div>
-                    <h3 class="font-['Space_Grotesk'] text-xl font-bold mb-2 text-[#f59e0b]">掌握AI基础</h3>
-                    <p class="text-gray-300">理解机器学习、深度学习核心概念，建立AI技术思维框架</p>
-                </div>
-                
-                <!-- Goal 2 -->
-                <div class="brutalist-card bg-[#334155] p-6 transform hover:rotate-[-0.5deg] transition-transform">
-                    <div class="w-12 h-12 bg-[#06b6d4] brutalist-border flex items-center justify-center text-black font-bold text-xl mb-4">2</div>
-                    <h3 class="font-['Space_Grotesk'] text-xl font-bold mb-2 text-[#06b6d4]">数据处理技能</h3>
-                    <p class="text-gray-300">熟练使用Python进行数据分析，掌握数据可视化技术</p>
-                </div>
-                
-                <!-- Goal 3 -->
-                <div class="brutalist-card bg-[#334155] p-6 transform hover:rotate-[0.5deg] transition-transform">
-                    <div class="w-12 h-12 bg-[#f59e0b] brutalist-border flex items-center justify-center text-black font-bold text-xl mb-4">3</div>
-                    <h3 class="font-['Space_Grotesk'] text-xl font-bold mb-2 text-[#f59e0b]">行业AI应用</h3>
-                    <p class="text-gray-300">将AI技术应用于资产完整性管理，解决实际业务问题</p>
-                </div>
-                
-                <!-- Goal 4 -->
-                <div class="brutalist-card bg-[#334155] p-6 transform hover:rotate-[-0.5deg] transition-transform">
-                    <div class="w-12 h-12 bg-[#06b6d4] brutalist-border flex items-center justify-center text-black font-bold text-xl mb-4">4</div>
-                    <h3 class="font-['Space_Grotesk'] text-xl font-bold mb-2 text-[#06b6d4]">LLM工具掌握</h3>
-                    <p class="text-gray-300">精通大语言模型工具集成，提升工作效率与决策质量</p>
-                </div>
-                
-                <!-- Goal 5 -->
-                <div class="brutalist-card bg-[#334155] p-6 transform hover:rotate-[0.5deg] transition-transform">
-                    <div class="w-12 h-12 bg-[#f59e0b] brutalist-border flex items-center justify-center text-black font-bold text-xl mb-4">5</div>
-                    <h3 class="font-['Space_Grotesk'] text-xl font-bold mb-2 text-[#f59e0b]">项目作品集</h3>
-                    <p class="text-gray-300">完成3-5个可展示的AI项目，建立个人技术品牌</p>
-                </div>
-                
-                <!-- Goal 6 -->
-                <div class="brutalist-card bg-[#334155] p-6 transform hover:rotate-[-0.5deg] transition-transform">
-                    <div class="w-12 h-12 bg-[#06b6d4] brutalist-border flex items-center justify-center text-black font-bold text-xl mb-4">6</div>
-                    <h3 class="font-['Space_Grotesk'] text-xl font-bold mb-2 text-[#06b6d4]">职业网络</h3>
-                    <p class="text-gray-300">建立AI领域专业人脉，获得行业认可与机会</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Roadmap Section -->
-    <section id="roadmap" class="py-20 px-4 sm:px-6 lg:px-8">
-        <div class="max-w-7xl mx-auto">
-            <h2 class="font-['Space_Grotesk'] text-4xl font-bold mb-4 text-center">
-                <span class="bg-[#f59e0b] text-black px-4 py-2 brutalist-border inline-block transform rotate-[1deg]">
-                    12周转型路线图
-                </span>
-            </h2>
-            <p class="text-center text-gray-400 mb-12">6大核心冲刺，每2周一个里程碑</p>
-            
-            <div class="relative">
-                <!-- Timeline Line -->
-                <div class="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-[#f59e0b]"></div>
-                
-                <!-- Sprint 1 -->
-                <div class="relative flex items-center justify-between mb-12">
-                    <div class="w-5/12 pr-8 text-right">
-                        <div class="brutalist-card bg-[#334155] p-6 transform rotate-[-0.5deg]">
-                            <span class="inline-block bg-[#f59e0b] text-black px-3 py-1 font-bold text-sm mb-2">Week 1-2</span>
-                            <h3 class="font-['Space_Grotesk'] text-xl font-bold mb-2">Sprint 1: AI基础</h3>
-                            <ul class="text-sm text-gray-300 space-y-1">
-                                <li>• AI/ML基础概念</li>
-                                <li>• 行业AI应用案例</li>
-                                <li>• Python编程入门</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="w-8 h-8 bg-[#f59e0b] brutalist-border z-10 flex items-center justify-center font-bold text-black">1</div>
-                    <div class="w-5/12 pl-8"></div>
-                </div>
-                
                 <!-- Sprint 2 -->
-                <div class="relative flex items-center justify-between mb-12">
-                    <div class="w-5/12 pr-8"></div>
-                    <div class="w-8 h-8 bg-[#06b6d4] brutalist-border z-10 flex items-center justify-center font-bold text-black">2</div>
-                    <div class="w-5/12 pl-8">
-                        <div class="brutalist-card bg-[#334155] p-6 transform rotate-[0.5deg]">
-                            <span class="inline-block bg-[#06b6d4] text-black px-3 py-1 font-bold text-sm mb-2">Week 3-4</span>
-                            <h3 class="font-['Space_Grotesk'] text-xl font-bold mb-2">Sprint 2: 数据处理</h3>
-                            <ul class="text-sm text-gray-300 space-y-1">
-                                <li>• Pandas/NumPy精通</li>
-                                <li>• 数据清洗与预处理</li>
-                                <li>• 可视化技术</li>
-                            </ul>
+                <div class="brutalist-card bg-[#334155] p-6 sprint-card opacity-75" data-sprint="2">
+                    <div class="flex flex-col md:flex-row gap-6">
+                        <div class="md:w-1/4">
+                            <div class="inline-block bg-[#06b6d4] text-black px-3 py-1 font-bold text-sm mb-2 brutalist-border">Week 3-4</div>
+                            <h3 class="font-['Space_Grotesk'] text-xl font-bold text-[#06b6d4]" data-i18n="roadmap.sprint2.title">Sprint 2: Data Processing</h3>
+                            <div class="mt-2">
+                                <span class="text-xs px-2 py-1 rounded status-badge bg-gray-600" data-status="not-started">Not Started</span>
+                            </div>
+                        </div>
+                        <div class="md:w-3/4">
+                            <p class="text-gray-300 mb-4" data-i18n="roadmap.sprint2.desc">Master data manipulation with Pandas/NumPy and visualization techniques</p>
+                            <div class="space-y-2">
+                                <div class="resource-link">
+                                    <span class="text-[#06b6d4]">📘</span>
+                                    <a href="https://www.kaggle.com/learn/pandas" target="_blank" class="text-[#06b6d4] hover:underline ml-2">Pandas Course (Kaggle)</a>
+                                </div>
+                                <div class="resource-link">
+                                    <span class="text-[#06b6d4]">📄</span>
+                                    <a href="#" target="_blank" class="text-[#06b6d4] hover:underline ml-2">Data Visualization Best Practices</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                
-                <!-- Sprint 3 -->
-                <div class="relative flex items-center justify-between mb-12">
-                    <div class="w-5/12 pr-8 text-right">
-                        <div class="brutalist-card bg-[#334155] p-6 transform rotate-[-0.5deg]">
-                            <span class="inline-block bg-[#f59e0b] text-black px-3 py-1 font-bold text-sm mb-2">Week 5-6</span>
-                            <h3 class="font-['Space_Grotesk'] text-xl font-bold mb-2">Sprint 3: 机器学习</h3>
-                            <ul class="text-sm text-gray-300 space-y-1">
-                                <li>• Scikit-learn应用</li>
-                                <li>• 监督/无监督学习</li>
-                                <li>• 模型评估优化</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="w-8 h-8 bg-[#f59e0b] brutalist-border z-10 flex items-center justify-center font-bold text-black">3</div>
-                    <div class="w-5/12 pl-8"></div>
-                </div>
-                
-                <!-- Sprint 4 -->
-                <div class="relative flex items-center justify-between mb-12">
-                    <div class="w-5/12 pr-8"></div>
-                    <div class="w-8 h-8 bg-[#06b6d4] brutalist-border z-10 flex items-center justify-center font-bold text-black">4</div>
-                    <div class="w-5/12 pl-8">
-                        <div class="brutalist-card bg-[#334155] p-6 transform rotate-[0.5deg]">
-                            <span class="inline-block bg-[#06b6d4] text-black px-3 py-1 font-bold text-sm mb-2">Week 7-8</span>
-                            <h3 class="font-['Space_Grotesk'] text-xl font-bold mb-2">Sprint 4: 深度学习</h3>
-                            <ul class="text-sm text-gray-300 space-y-1">
-                                <li>• 神经网络基础</li>
-                                <li>• 时间序列分析</li>
-                                <li>• 预测性维护模型</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Sprint 5 -->
-                <div class="relative flex items-center justify-between mb-12">
-                    <div class="w-5/12 pr-8 text-right">
-                        <div class="brutalist-card bg-[#334155] p-6 transform rotate-[-0.5deg]">
-                            <span class="inline-block bg-[#f59e0b] text-black px-3 py-1 font-bold text-sm mb-2">Week 9-10</span>
-                            <h3 class="font-['Space_Grotesk'] text-xl font-bold mb-2">Sprint 5: LLM工具</h3>
-                            <ul class="text-sm text-gray-300 space-y-1">
-                                <li>• 大语言模型原理</li>
-                                <li>• OpenAI API集成</li>
-                                <li>• 构建AI应用</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="w-8 h-8 bg-[#f59e0b] brutalist-border z-10 flex items-center justify-center font-bold text-black">5</div>
-                    <div class="w-5/12 pl-8"></div>
-                </div>
-                
-                <!-- Sprint 6 -->
-                <div class="relative flex items-center justify-between">
-                    <div class="w-5/12 pr-8"></div>
-                    <div class="w-8 h-8 bg-[#06b6d4] brutalist-border z-10 flex items-center justify-center font-bold text-black">6</div>
-                    <div class="w-5/12 pl-8">
-                        <div class="brutalist-card bg-[#334155] p-6 transform rotate-[0.5deg]">
-                            <span class="inline-block bg-[#06b6d4] text-black px-3 py-1 font-bold text-sm mb-2">Week 11-12</span>
-                            <h3 class="font-['Space_Grotesk'] text-xl font-bold mb-2">Sprint 6: 项目整合</h3>
-                            <ul class="text-sm text-gray-300 space-y-1">
-                                <li>• 综合项目开发</li>
-                                <li>• 作品集完善</li>
-                                <li>• 职业规划落地</li>
-                            </ul>
-                        </div>
-                    </div>
+
+                <!-- Additional sprints would follow same pattern -->
+                <div class="text-center mt-8">
+                    <button id="expand-roadmap" class="brutalist-btn bg-[#334155] text-white px-6 py-3 font-bold" data-i18n="roadmap.expandBtn">
+                        View All 12 Weeks →
+                    </button>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Progress Section -->
-    <section id="progress" class="py-20 px-4 sm:px-6 lg:px-8 bg-[#0f172a]">
-        <div class="max-w-7xl mx-auto">
-            <h2 class="font-['Space_Grotesk'] text-4xl font-bold mb-4 text-center">
-                <span class="bg-[#06b6d4] text-black px-4 py-2 brutalist-border inline-block transform rotate-[-1deg]">
-                    学习进度追踪
-                </span>
-            </h2>
-            <p class="text-center text-gray-400 mb-12">实时更新，见证每一步成长</p>
-            
-            <div class="brutalist-card bg-[#334155] p-8 max-w-3xl mx-auto">
-                <div class="flex justify-between items-end mb-4">
-                    <div>
-                        <div class="text-sm text-gray-400 mb-1">总体进度</div>
-                        <div class="font-['Space_Grotesk'] text-3xl font-bold text-[#f59e0b]">
-                            <span id="progress-percent">8</span>%
-                        </div>
-                    </div>
-                    <div class="text-right">
-                        <div class="text-sm text-gray-400 mb-1">当前周</div>
-                        <div class="font-['Space_Grotesk'] text-3xl font-bold text-[#06b6d4]">Week <span id="current-week-display">1</span></div>
-                    </div>
-                </div>
-                
-                <!-- Progress Bar -->
-                <div class="w-full h-8 bg-[#1e293b] brutalist-border overflow-hidden mb-6">
-                    <div id="progress-bar" class="h-full bg-gradient-to-r from-[#f59e0b] to-[#06b6d4] transition-all duration-1000 ease-out" style="width: 8%"></div>
-                </div>
-                
-                <div class="grid grid-cols-3 gap-4 text-center">
-                    <div class="brutalist-card bg-[#1e293b] p-4">
-                        <div class="text-2xl font-bold text-[#f59e0b]" id="completed-sprints">0</div>
-                        <div class="text-sm text-gray-400">已完成冲刺</div>
-                    </div>
-                    <div class="brutalist-card bg-[#1e293b] p-4">
-                        <div class="text-2xl font-bold text-[#06b6d4]" id="certificates-count">0</div>
-                        <div class="text-sm text-gray-400">获得证书</div>
-                    </div>
-                    <div class="brutalist-card bg-[#1e293b] p-4">
-                        <div class="text-2xl font-bold text-green-400" id="projects-count">0</div>
-                        <div class="text-sm text-gray-400">完成项目</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Milestones Section -->
+    <!-- Milestones -->
     <section id="milestones" class="py-20 px-4 sm:px-6 lg:px-8">
         <div class="max-w-7xl mx-auto">
             <h2 class="font-['Space_Grotesk'] text-4xl font-bold mb-4 text-center">
-                <span class="bg-[#f59e0b] text-black px-4 py-2 brutalist-border inline-block transform rotate-[1deg]">
-                    LinkedIn 里程碑
+                <span class="bg-[#f59e0b] text-black px-4 py-2 brutalist-border inline-block transform rotate-[1deg]" data-i18n="milestones.title">
+                    LinkedIn Milestones
                 </span>
             </h2>
-            <p class="text-center text-gray-400 mb-12">每2周一个可展示的成果</p>
+            <p class="text-center text-gray-400 mb-12" data-i18n="milestones.subtitle">Shareable achievements every two weeks</p>
             
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- Milestone Cards -->
-                <div class="brutalist-card bg-[#334155] p-6 transform hover:rotate-[0.5deg] transition-transform border-l-4 border-[#f59e0b]">
+                <div class="brutalist-card bg-[#334155] p-6 border-l-4 border-[#f59e0b]">
                     <div class="flex items-center gap-2 mb-3">
                         <span class="text-2xl">🏆</span>
                         <span class="text-sm text-[#f59e0b] font-bold">Week 2</span>
                     </div>
-                    <h3 class="font-bold mb-2">Python数据分析证书</h3>
-                    <p class="text-sm text-gray-400">完成DataCamp或Coursera认证</p>
+                    <h3 class="font-bold mb-2" data-i18n="milestones.1.title">Python Data Analysis Certificate</h3>
+                    <p class="text-sm text-gray-400" data-i18n="milestones.1.desc">Complete DataCamp or Coursera certification</p>
                 </div>
-                
-                <div class="brutalist-card bg-[#334155] p-6 transform hover:rotate-[-0.5deg] transition-transform border-l-4 border-[#06b6d4]">
-                    <div class="flex items-center gap-2 mb-3">
-                        <span class="text-2xl">📊</span>
-                        <span class="text-sm text-[#06b6d4] font-bold">Week 4</span>
-                    </div>
-                    <h3 class="font-bold mb-2">资产数据可视化项目</h3>
-                    <p class="text-sm text-gray-400">发布到GitHub的技术博客</p>
-                </div>
-                
-                <div class="brutalist-card bg-[#334155] p-6 transform hover:rotate-[0.5deg] transition-transform border-l-4 border-[#f59e0b]">
-                    <div class="flex items-center gap-2 mb-3">
-                        <span class="text-2xl">🤖</span>
-                        <span class="text-sm text-[#f59e0b] font-bold">Week 6</span>
-                    </div>
-                    <h3 class="font-bold mb-2">机器学习预测模型</h3>
-                    <p class="text-sm text-gray-400">设备故障预测案例分享</p>
-                </div>
-                
-                <div class="brutalist-card bg-[#334155] p-6 transform hover:rotate-[-0.5deg] transition-transform border-l-4 border-[#06b6d4]">
-                    <div class="flex items-center gap-2 mb-3">
-                        <span class="text-2xl">🧠</span>
-                        <span class="text-sm text-[#06b6d4] font-bold">Week 8</span>
-                    </div>
-                    <h3 class="font-bold mb-2">深度学习项目演示</h3>
-                    <p class="text-sm text-gray-400">时间序列预测视频展示</p>
-                </div>
-                
-                <div class="brutalist-card bg-[#334155] p-6 transform hover:rotate-[0.5deg] transition-transform border-l-4 border-[#f59e0b]">
-                    <div class="flex items-center gap-2 mb-3">
-                        <span class="text-2xl">💬</span>
-                        <span class="text-sm text-[#f59e0b] font-bold">Week 10</span>
-                    </div>
-                    <h3 class="font-bold mb-2">AI工具集成应用</h3>
-                    <p class="text-sm text-gray-400">自动化报告生成系统</p>
-                </div>
-                
-                <div class="brutalist-card bg-[#334155] p-6 transform hover:rotate-[-0.5deg] transition-transform border-l-4 border-[#06b6d4]">
-                    <div class="flex items-center gap-2 mb-3">
-                        <span class="text-2xl">🎓</span>
-                        <span class="text-sm text-[#06b6d4] font-bold">Week 12</span>
-                    </div>
-                    <h3 class="font-bold mb-2">综合项目作品集</h3>
-                    <p class="text-sm text-gray-400">完整转型故事与成果</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Certificates Section -->
-    <section class="py-20 px-4 sm:px-6 lg:px-8 bg-[#0f172a]">
-        <div class="max-w-7xl mx-auto">
-            <h2 class="font-['Space_Grotesk'] text-4xl font-bold mb-4 text-center">
-                <span class="bg-[#06b6d4] text-black px-4 py-2 brutalist-border inline-block transform rotate-[-1deg]">
-                    证书计划
-                </span>
-            </h2>
-            <p class="text-center text-gray-400 mb-12">可写入简历的AI证书</p>
-            
-            <div class="space-y-4 max-w-3xl mx-auto">
-                <div class="brutalist-card bg-[#334155] p-4 flex items-center gap-4">
-                    <div class="w-12 h-12 bg-[#f59e0b] brutalist-border flex items-center justify-center text-2xl">🏅</div>
-                    <div class="flex-1">
-                        <h3 class="font-bold">Google AI Essentials</h3>
-                        <p class="text-sm text-gray-400">AI基础与应用入门</p>
-                    </div>
-                    <span class="text-[#f59e0b] font-bold">高优</span>
-                </div>
-                
-                <div class="brutalist-card bg-[#334155] p-4 flex items-center gap-4">
-                    <div class="w-12 h-12 bg-[#06b6d4] brutalist-border flex items-center justify-center text-2xl">🏅</div>
-                    <div class="flex-1">
-                        <h3 class="font-bold">Microsoft Azure AI Fundamentals</h3>
-                        <p class="text-sm text-gray-400">云AI服务基础</p>
-                    </div>
-                    <span class="text-[#06b6d4] font-bold">高优</span>
-                </div>
-                
-                <div class="brutalist-card bg-[#334155] p-4 flex items-center gap-4">
-                    <div class="w-12 h-12 bg-[#f59e0b] brutalist-border flex items-center justify-center text-2xl">🏅</div>
-                    <div class="flex-1">
-                        <h3 class="font-bold">DeepLearning.AI Specialization</h3>
-                        <p class="text-sm text-gray-400">吴恩达深度学习专项</p>
-                    </div>
-                    <span class="text-[#f59e0b] font-bold">高优</span>
-                </div>
-                
-                <div class="brutalist-card bg-[#334155] p-4 flex items-center gap-4">
-                    <div class="w-12 h-12 bg-gray-500 brutalist-border flex items-center justify-center text-2xl">🏅</div>
-                    <div class="flex-1">
-                        <h3 class="font-bold">IBM Data Science Professional</h3>
-                        <p class="text-sm text-gray-400">数据科学专业证书</p>
-                    </div>
-                    <span class="text-gray-400 font-bold">中优</span>
-                </div>
+                <!-- More milestones... -->
             </div>
         </div>
     </section>
@@ -413,21 +302,39 @@
     <footer class="py-12 px-4 sm:px-6 lg:px-8 border-t-4 border-black bg-[#1e293b]">
         <div class="max-w-7xl mx-auto text-center">
             <div class="font-['Space_Grotesk'] text-3xl font-bold text-[#f59e0b] mb-4">Qunhao.AI</div>
-            <p class="text-gray-400 mb-6">25年资产完整性经验 × AI技术 = 未来的资产管理战略家</p>
+            <p class="text-gray-400 mb-6" data-i18n="footer.tagline">25 years of Asset Integrity experience × AI Technology = Future Leader</p>
             <div class="flex justify-center gap-4">
-                <a href="#" class="brutalist-btn bg-[#334155] text-white px-6 py-3 inline-block hover:bg-[#475569] transition-colors">
-                    LinkedIn
-                </a>
-                <a href="#" class="brutalist-btn bg-[#334155] text-white px-6 py-3 inline-block hover:bg-[#475569] transition-colors">
-                    GitHub
-                </a>
-                <a href="#" class="brutalist-btn bg-[#334155] text-white px-6 py-3 inline-block hover:bg-[#475569] transition-colors">
-                    Email
-                </a>
+                <a href="https://linkedin.com" target="_blank" class="brutalist-btn bg-[#334155] text-white px-6 py-3 inline-block hover:bg-[#475569]">LinkedIn</a>
+                <a href="https://github.com/linqunhao" target="_blank" class="brutalist-btn bg-[#334155] text-white px-6 py-3 inline-block hover:bg-[#475569]">GitHub</a>
             </div>
-            <p class="text-sm text-gray-500 mt-8">© 2026 Qunhao's AI Transformation Journey. All rights reserved.</p>
+            <p class="text-sm text-gray-500 mt-8">© 2026 Qunhao's AI Transformation Journey</p>
         </div>
     </footer>
+
+    <!-- Progress Edit Modal -->
+    <div id="progress-modal" class="fixed inset-0 bg-black/80 z-50 hidden flex items-center justify-center">
+        <div class="brutalist-card bg-[#334155] p-8 max-w-md w-full mx-4">
+            <h3 class="font-['Space_Grotesk'] text-2xl font-bold mb-6 text-[#f59e0b]" data-i18n="modal.title">Update Progress</h3>
+            <div class="space-y-4">
+                <div>
+                    <label class="block text-sm mb-2" data-i18n="modal.currentWeek">Current Week (1-12):</label>
+                    <input type="number" id="edit-week" min="1" max="12" value="1" class="w-full bg-[#1e293b] border-2 border-black p-3 text-white">
+                </div>
+                <div>
+                    <label class="block text-sm mb-2" data-i18n="modal.sprints">Completed Sprints (0-6):</label>
+                    <input type="number" id="edit-sprints" min="0" max="6" value="0" class="w-full bg-[#1e293b] border-2 border-black p-3 text-white">
+                </div>
+                <div>
+                    <label class="block text-sm mb-2" data-i18n="modal.certs">Certificates Earned:</label>
+                    <input type="number" id="edit-certs" min="0" value="0" class="w-full bg-[#1e293b] border-2 border-black p-3 text-white">
+                </div>
+            </div>
+            <div class="flex gap-4 mt-6">
+                <button id="save-progress" class="brutalist-btn bg-[#f59e0b] text-black px-6 py-3 font-bold flex-1" data-i18n="modal.save">Save</button>
+                <button id="cancel-progress" class="brutalist-btn bg-[#334155] text-white px-6 py-3 font-bold flex-1" data-i18n="modal.cancel">Cancel</button>
+            </div>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
