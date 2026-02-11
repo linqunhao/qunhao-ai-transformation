@@ -69,7 +69,7 @@ const i18n = {
         'nav.roadmap': '学习路线图',
         'nav.dashboard': '进度看板',
         'nav.milestones': '里程碑',
-        'hero.name': '林群豪',
+        'hero.name': 'Qunhao Lin',
         'hero.subtitle': 'AI 赋能的能源行业领导者',
         'hero.description': '25年资产完整性经验 × AI 技术 = 能源运营的未来',
         'positioning.1.title': 'AI 赋能的资深能源运营领导者',
